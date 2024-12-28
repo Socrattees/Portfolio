@@ -18,6 +18,10 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover {
+  color: white;
+}
+
 /* buttons */
 button {
   font-family: 'Oswald', sans-serif;
@@ -42,23 +46,15 @@ header li {
   margin: 0px 30px;
 }
 
-header li:hover {
-  color: white;
-}
-
 header p {
   white-space: nowrap;
-}
-
-header p:hover {
-  color: white;
 }
 
 /* main */
 main h1 {
   text-align: center;
   margin-top: 100px;
-  font-size: 64px;
+  font-size: 4rem;
 }
 
 #contact-details {
@@ -75,7 +71,7 @@ main h1 {
 
 #contact-details p {
   margin-bottom: 40px;
-  font-size: 28px;
+  font-size: 1.8rem;
 }
 
 #contact-details span {

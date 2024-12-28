@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Qinisela de la Hunt's Portfolio</title>
-    <link rel="stylesheet" href="../css/projects.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/projects.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body>
     <header>
@@ -22,6 +26,48 @@
     </header>
     <main>
       <h1>Projects</h1>
+      <h2>Ongoing:</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Q-Ball</h3>
+          <div id="qballCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/projects/Q-Ball/screenshot_home_page.png" class="d-block w-100" alt="Screenshot of Q-Ball home page">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/projects/Q-Ball/screenshot_login_page.png" class="d-block w-100" alt="Screenshot of Q-Ball profile page">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/projects/Q-Ball/screenshot_user_page.png" class="d-block w-100" alt="Screenshot of Q-Ball profile page">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/projects/Q-Ball/screenshot_messenger_page.png" class="d-block w-100" alt="Screenshot of Q-Ball settings page">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#qballCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </a>
+            <a class="carousel-control-next" href="#qballCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"></span>
+            </a>
+          </div>
+          <div class="project-info">
+            <p>
+              <strong>Description: </strong>
+              Q-Ball is a social media MERN project that was designed with the purpose 
+              to both test and improve my skills in full-stack development.
+            </p>
+            <p><strong>Technologies: </strong>HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, Socket.io</p>
+            <p>
+              <strong>GitHub Repo: </strong>
+              <a href="https://github.com/Socrattees/mern-social-media-app" target="_blank">https://github.com/Socrattees/mern-social-media-app</a>
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>

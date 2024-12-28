@@ -18,6 +18,10 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover {
+  color: white;
+}
+
 /* buttons */
 button {
   font-family: 'Oswald', sans-serif;
@@ -42,16 +46,8 @@ header li {
   margin: 0px 30px;
 }
 
-header li:hover {
-  color: white;
-}
-
 header p {
   white-space: nowrap;
-}
-
-header p:hover {
-  color: white;
 }
 
 /* main */
@@ -72,7 +68,7 @@ main {
 }
 
 #main-text p {
-  font-size: 28px;
+  font-size: 1.8rem;
 }
 
 #main-text span {
@@ -82,7 +78,7 @@ main {
 #main-text-btn {
   margin-top: 100px;
   padding: 10px 20px;
-  font-size: 28px;
+  font-size: 1.8rem;
   border-radius: 5px;
   font-weight: bold;
   background-color: white;

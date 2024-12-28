@@ -18,6 +18,10 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover {
+  color: white;
+}
+
 /* buttons */
 button {
   font-family: 'Oswald', sans-serif;
@@ -36,27 +40,81 @@ header ul {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 header li {
   margin: 0px 30px;
 }
 
-header li:hover {
-  color: white;
-}
-
 header p {
   white-space: nowrap;
-}
-
-header p:hover {
-  color: white;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 /* main */
+main {
+  padding: 0px 50px;
+}
+
 main h1 {
   text-align: center;
   margin-top: 100px;
-  font-size: 64px;
+  font-size: 4rem;
+}
+
+main h2 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+main h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 24px 0px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.project-card {
+  max-width: 80%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: navy;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.carousel-control-prev-icon {
+  background-image: none;
+}
+
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-prev-icon::after {
+  content: '<';
+  color: black;
+  font-size: 2.5rem;
+}
+
+.carousel-control-next-icon::after {
+  content: '>';
+  color: black;
+  font-size: 2.5rem;
+}
+
+
+.project-card .project-info {
+  padding-left: 20px;
+  margin-top: 20px;
 }
