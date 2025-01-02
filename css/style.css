@@ -31,23 +31,35 @@ button {
 header {
   display: flex;
   justify-content: space-between;
-  padding-left: 30px;
+  position: sticky;
+  z-index: 10;
+  padding: 0px 30px;
   font-size: 1.5rem;
   border-bottom: 2px solid black;
 }
 
-header ul {
+#nav-list {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
+  align-items: center;
 }
 
 header li {
   margin: 0px 30px;
 }
 
+header li:last-child {
+  margin-right: 0px;
+}
+
 header p {
   white-space: nowrap;
+}
+
+#menu-icon {
+  display: none;
+  cursor: pointer;
 }
 
 /* main */
@@ -97,6 +109,7 @@ main {
 @media (max-width: 768px) {
   html, body {
     padding-bottom: 30px;
+    font-size: 14px;
   }
 
   main {
@@ -104,6 +117,14 @@ main {
     flex-direction: column;
     align-items: center;
     flex-direction: column-reverse;
+  }
+
+  header {
+    align-items: center;
+  }
+
+  header li {
+    margin: 0px 10px;
   }
 
   #main-text {
@@ -116,7 +137,52 @@ main {
 }
 
 @media (max-width: 480px) {
+  html, body {
+    font-size: 12px;
+  }
+
+  #nav-list {
+    display: none;
+    flex-direction: column;
+    padding: 0px;
+    position: fixed;
+    top: 35px;
+    right: 15px;
+    background-color: #531313;
+    border: 2px solid black;
+  }
+
+  #nav-list.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header li:last-child {
+    margin-right: 10px;
+  }
+
+  #menu-icon {
+    display: inline-block;
+  }
+  
+  header li {
+    margin: 5px 10px;
+  }
+
+  main {
+    margin-top: 70px;
+  }
+  
   #profile-img {
-    width: 100px;
+    width: 200px;
+  }
+
+  #main-text h1 {
+    font-size: 2.5rem;
+  }
+
+  #main-text-btn {
+    margin-top: 70px;
   }
 }
